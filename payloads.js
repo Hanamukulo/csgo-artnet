@@ -1,8 +1,10 @@
 http = require('http');
 fs = require('fs');
 
-port = 3000;
-host = '192.168.10.52';
+var config = require('./config.js');
+
+port = config.POST;
+host = config.HORT;
 
 server = http.createServer( function(req, res) {
 
